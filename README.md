@@ -1,0 +1,1 @@
+DraftMet is python based tool developed in order to fasten the process of constructing manually curated GEM Model for any organism. It's important to note that this tool constructs the draft model only which requires manual intervention to get the fully functional GEM Model.
