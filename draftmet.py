@@ -11,6 +11,7 @@ import re
 import pandas as pd
 from tqdm import tqdm
 
+#take input from user
 org_name = input(str("Please enter KEGG organism code: "))
 organism_id = input(str("Please enter UNIPROT oragnism ID: "))
 
@@ -130,5 +131,7 @@ merged_df = pd.DataFrame(merged_rows)
 test_df = pd.merge(merged_df, main_df, how = 'right')
 
 test_df.to_csv(f'{org_name}.csv')
+
+print(f'DraftMet file was sucessfully saved as {org_name}.csv')
 
 
